@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the IP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ipContainer">
+        <h1>Welcome to Guess the IP Game</h1>
+        <p>Enter an IP address to start:</p>
+        <input type="text" id="ipInput" placeholder="Enter IP address">
+        <button onclick="startQuiz()">Start</button>
+    </div>
+    <div id="quizContainer" style="display: none;">
+        <h1>Quiz</h1>
+        <p id="question"></p>
+        <input type="text" id="answerInput" placeholder="Enter your answer">
+        <button onclick="submitAnswer()">Submit</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
